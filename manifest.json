@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Gitlab MR",
+    "description": "Adds useful features for merge request",
+    "version": "1.0",
+    "action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["index.js"],
+            "matches": [
+                "https://code.dev.gazprom-neft.ru/*merge_requests/*"
+            ]
+        }
+    ]
+}
